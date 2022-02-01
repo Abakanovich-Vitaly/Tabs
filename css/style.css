@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: cornsilk;
+  font-family: monospace;
+  font-style: italic;
+}
+
+.tabs {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: rgb(233, 229, 229);
+  box-shadow: 0px 0px 10px
+    rgb(rgb(121, 121, 121), rgb(77, 87, 77), rgb(54, 54, 65));
+}
+
+.tabs__head {
+  display: flex;
+  align-items: stretch;
+}
+
+.tabs__toggle {
+  display: flex;
+  width: 33.3334%;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: darkseagreen;
+  font-style: 20px;
+}
+
+.tabs__toggle.is-active {
+  background: rgb(233, 229, 229);
+}
+
+.tabs__content {
+  padding: 10px;
+  display: none;
+}
+
+.tabs__content.is-active {
+  display: block;
+}
+
+.tabs__title {
+  font-size: 22px;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.tabs__text {
+  font-size: 17px;
+  color: black;
+}
